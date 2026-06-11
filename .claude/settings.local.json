@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\" -Recurse -Directory | Select-Object -First 50 | ForEach-Object { $_.FullName.Replace\\(\"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\", \".\"\\) })",
+      "PowerShell(Get-ChildItem -Path \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\resources\\\\views\" -Recurse -File | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-ChildItem -Path \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\app\\\\Models\" -Recurse -File | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-ChildItem -Path \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\resources\" -Recurse -File | Select-Object Name, @{Label=\"Path\";Expression={$_.FullName.Replace\\(\"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\resources\\\\\", \"\"\\)}} | Format-Table -AutoSize)",
+      "PowerShell(Get-ChildItem -Path \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\database\\\\migrations\" -File | ForEach-Object { $_.Name })",
+      "PowerShell(Get-ChildItem -Path \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\" -File | ForEach-Object { $_.Name } | Where-Object { $_ -match \"readme|\\\\.env|artisan\" })",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\resources\\\\views\\\\layouts\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\resources\\\\views\\\\home\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\resources\\\\views\\\\products\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\resources\\\\views\\\\profile\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\resources\\\\views\\\\contact\")",
+      "PowerShell(cd d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya; php artisan tinker --execute=\"App\\\\Models\\\\Category::all\\(['id','name']\\)->each\\(function\\(\\\\$c\\){ echo \\\\$c->id.' - '.\\\\$c->name.'\\\\n'; }\\);\")",
+      "PowerShell(& \"C:\\\\xampp\\\\xampp-control.exe\" 2>$null)",
+      "PowerShell(Start-Process \"C:\\\\xampp\\\\xampp_start.exe\" -Wait -ErrorAction SilentlyContinue)",
+      "PowerShell(cmd /c \"dir C:\\\\xampp\\\\\")",
+      "PowerShell(Copy-Item \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\docs\\\\ui-mockup.html\" \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\public\\\\ui-mockup.html\")",
+      "PowerShell(node --version)",
+      "PowerShell(npx --version)",
+      "PowerShell(python --version 2>$null)",
+      "PowerShell(python3 --version 2>$null)",
+      "PowerShell(python -c \"import selenium\" 2>&1)",
+      "PowerShell(python -c \"import playwright\" 2>&1)",
+      "PowerShell(python -c \"import PIL\" 2>&1)",
+      "PowerShell(New-Item -ItemType Directory -Force \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\resources\\\\views\\\\katalog\")",
+      "PowerShell(New-Item -ItemType File -Path \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\resources\\\\views\\\\katalog\\\\index.blade.php\" -Force)",
+      "PowerShell(New-Item -ItemType Directory -Force \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\\\\diagrams\")",
+      "PowerShell(Get-ChildItem -Path \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\" -Force | Where-Object {!$_.PSIsContainer} | Select-Object Name, @{Name=\"Size\"; Expression={[math]::Round\\($_.Length/1KB, 2\\)}}MB)",
+      "PowerShell(Get-ChildItem -Path \"d:\\\\xampp\\\\htdocs\\\\siska-croco-jaya\" -Force | Where-Object {!$_.PSIsContainer} | Select-Object Name, Length)",
+      "PowerShell($env:PATH -split \";\")",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\xampppp\" -Force | Select-Object Name; Get-ChildItem -Path \"C:\\\\xampppp\\\\php82\" -Force | Where-Object {$_.Name -match \"composer|phar\"})",
+      "PowerShell(& \"C:\\\\xampppp\\\\php82\\\\php.exe\" --version 2>&1)",
+      "PowerShell(Get-Command git -ErrorAction SilentlyContinue)"
+    ]
+  }
+}
