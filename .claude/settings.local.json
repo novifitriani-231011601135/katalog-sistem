@@ -32,7 +32,10 @@
       "PowerShell($env:PATH -split \";\")",
       "PowerShell(Get-ChildItem -Path \"C:\\\\xampppp\" -Force | Select-Object Name; Get-ChildItem -Path \"C:\\\\xampppp\\\\php82\" -Force | Where-Object {$_.Name -match \"composer|phar\"})",
       "PowerShell(& \"C:\\\\xampppp\\\\php82\\\\php.exe\" --version 2>&1)",
-      "PowerShell(Get-Command git -ErrorAction SilentlyContinue)"
+      "PowerShell(Get-Command git -ErrorAction SilentlyContinue)",
+      "PowerShell($env:PATH = \"C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\GitHubDesktop\\\\app-3.5.12\\\\resources\\\\app\\\\git\\\\cmd;\" + $env:PATH; cd \"d:\\\\xampp\\\\htdocs\\\\kerja praktek_semester 6\\\\katalog-sistem\"; git --version)",
+      "PowerShell($env:PATH = \"C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\GitHubDesktop\\\\app-3.5.12\\\\resources\\\\app\\\\git\\\\cmd;\" + $env:PATH; cd \"d:\\\\xampp\\\\htdocs\\\\kerja praktek_semester 6\\\\katalog-sistem\"; git init; git config user.name \"novifitriani-231011601135\"; git config user.email \"novifitriani1812@gmail.com\")",
+      "PowerShell($env:PATH = \"C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\GitHubDesktop\\\\app-3.5.12\\\\resources\\\\app\\\\git\\\\cmd;\" + $env:PATH; cd \"d:\\\\xampp\\\\htdocs\\\\kerja praktek_semester 6\\\\katalog-sistem\"; git add .; git status --short | Measure-Object | Select-Object -ExpandProperty Count)"
     ]
   }
 }
